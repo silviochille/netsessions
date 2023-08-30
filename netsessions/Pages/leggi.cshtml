@@ -2,4 +2,9 @@
 @model netsessions.Pages.leggiModel
 <h1>Lettura</h1>
 
-<h4>Numero vaori di sessione @Model.info</h4>
+<h4>Numero valori di sessione @Model.info</h4>
+<h5>@Model.msg</h5>
+@foreach(string v in Model.valoris)
+{
+    <li>@v</li>
+}
