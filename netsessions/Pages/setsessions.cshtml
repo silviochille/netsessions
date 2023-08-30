@@ -1,4 +1,21 @@
 ﻿@page
 @model netsessions.Pages.Shared.setsessionsModel
-@{
-}
+
+<h1>Setta valori di sessione</h1>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-5">
+            <form method="post">
+                <label>Immetti valore</label>
+                <input type="text" name="sessionv" />
+                <button type="submit">Invia</button>
+
+            </form>
+            <div>@Model.msg</div>
+          
+        </div>
+    </div>
+
+</div>
